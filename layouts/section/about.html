@@ -1,0 +1,16 @@
+{{ define "main" }}
+
+<div>
+    {{ partial "page-title" (dict "title" .Title "subtitle" .Params.subtitle "page" .Params)}}
+
+    {{ partial "blockloader" . }}
+
+    {{ with .Content }}
+        <section class="container mx-auto mt-12 px-2 md:px-8 pb-8 text-rl-gray">
+            {{ . }}
+        </section>
+    {{ end }}
+
+</div>
+
+{{ end }}

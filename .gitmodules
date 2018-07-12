@@ -1,0 +1,3 @@
+[submodule "themes/featherweight"]
+	path = themes/featherweight
+	url = git@github.com:rebolyte/hugo-featherweight.git
