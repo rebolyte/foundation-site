@@ -1,7 +1,7 @@
 ---
 date: 2017-05-05T20:01:17-05:00
 title: Title goes here
-author: Gregg Irwin
+location: Paris, France
 category: meeting
 tags:
   - blockchain

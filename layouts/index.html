@@ -2,6 +2,30 @@
 
     <!-- Use page-specific blockloader, since we need to divide up some sections -->
     {{- range .Params.blocks -}}
+        {{- if eq .template "action-feature" -}}{{ partial "blocks/action-feature" (dict "Params" .) }}{{- end -}}
+    {{- end -}}
+    
+    <section class="py-4">
+        <div class="container mx-auto flex flex-col items-center">
+            <div class="grid grid-columns-1 grid-gap-xs sm:grid-columns-2 sm:grid-gap-sm grid-justify-center">
+                <div class="card min-w-sm bg-golden-gradient">
+                    <h2 class="text-grey-darker">{{ i18n "latest_blogs" }}</h2>
+                    {{ range first 4 (where .Data.Pages.ByDate.Reverse "Section" "blog") }}
+                        {{ .Render "li" }}
+                    {{ end }}
+                </div>
+            
+                <div class="card min-w-sm bg-blue-gradient">
+                    <h2 class="text-grey-darker">{{ i18n "latest_events" }}</h2>        
+                    {{ range first 4 (where .Data.Pages.ByDate.Reverse "Section" "events") }}
+                        {{ .Render "li" }}
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{- range .Params.blocks -}}
         {{- if eq .template "hero" -}}{{ partial "blocks/hero" (dict "Params" .) }}{{- end -}}
         {{- if eq .template "media-feature" -}}{{ partial "blocks/media-feature" (dict "Params" .) }}{{- end -}}
         {{- if eq .template "narrow-feature" -}}{{ partial "blocks/narrow-feature" (dict "Params" .) }}{{- end -}}
@@ -10,7 +34,6 @@
         {{- if eq .template "2up" -}}{{ partial "blocks/2up" (dict "Params" .) }}{{- end -}}
         {{- if eq .template "card-grid" -}}{{ partial "blocks/card-grid" (dict "Params" .) }}{{- end -}}
         {{- if eq .template "grid-list" -}}{{ partial "blocks/grid-list" (dict "Params" .) }}{{- end -}}
-        {{- if eq .template "action-feature" -}}{{ partial "blocks/action-feature" (dict "Params" .) }}{{- end -}}
     {{- end -}}
 
     {{ .Content }}

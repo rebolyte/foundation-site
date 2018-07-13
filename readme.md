@@ -19,25 +19,15 @@ See other scripts in package.json.
 
 ## Recommended dev environment
 
-VS Code (this will use the workspace settings defined in .vscode/settings.json) with [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint), [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode), [stylelint](https://marketplace.visualstudio.com/items?itemName=shinnn.stylelint), and [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur) extensions installed. Linting and formatting will automatically run with a git hook, but these give you faster feedback.
+VS Code (this will use the workspace settings defined in .vscode/settings.json) with [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint), [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode), and [stylelint](https://marketplace.visualstudio.com/items?itemName=shinnn.stylelint) extensions installed. Linting and formatting will automatically run with a git hook, but these give you faster feedback.
 
 ## Working with the theme git submodule
 
 To pull in submodule changes:
 
 ```
-$ cd themes/featherweight
-$ git pull origin master
-$ cd ../..
-$ git status    # shows modified submodule
-$ git commit -a -m "submodule updated"
-```
-
-or just
-
-```
 $ git submodule update --remote --merge
-$ git commit -a - m "submodule updated"
+$ git commit -a -m "submodule updated"
 ```
 
 To push changes made in theme submodule (while within themes/featherweight directory):

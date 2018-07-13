@@ -37,3 +37,27 @@
 		config('colors.rl-green-darker')
 	);
 }
+
+.bg-golden-gradient {
+	background-image: linear-gradient(
+		to bottom,
+		config('colors.rl-golden'),
+		config('colors.rl-golden-darker')
+	);
+}
+
+.bg-blue-gradient {
+	background-image: linear-gradient(
+		to bottom,
+		config('colors.rl-light-blue'),
+		config('colors.rl-med-blue')
+	);
+}
+
+.arrow-right {
+	width: 0;
+	height: 0;
+	border-left: 6px solid config('colors.rl-gray');
+	border-top: 6px solid transparent;
+	border-bottom: 6px solid transparent;
+}
