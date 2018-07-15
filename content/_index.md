@@ -23,10 +23,11 @@ blocks:
       Those are known quantities. But with the creation of the RED token, we are also entering uncharted waters, and this is where new goals, needs, and requirements will force us to be a living, dynamic organization. We don't have the luxury of laying down rules that will last for all time. In order to learn how RED tokens can, and should be used, exploration and courage are required. Finding the balance between embracing change, and providing solid footing for continued forward progress over the long haul, will be a challenge. Doing so reliably, securely, and as transparently as possible is our goal.
     image: "http://via.placeholder.com/500x280"
     image_position: "left"
-  - template: "1up"
+  - template: "1up-media"
+    type: "video"
     heading: "Our Mission"
-    content: >
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/SGjVUfiZBLA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    src: >
+      <iframe src="https://www.youtube.com/embed/SGjVUfiZBLA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
   - template: "narrow-cta"
     description: "We’re on a Mission to Fight Software Complexity"
     link_url: "/join/"
