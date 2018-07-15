@@ -103,6 +103,23 @@ languages:
           URL: "/join/"
 
 params:
+  sponsors:
+    - Name: "Microsoft"
+      Weight: 1
+      URL: "https://www.microsoft.com/"
+      logo_src: "/images/microsoft-logo.png"
+    - Name: "Microsoft"
+      Weight: 2
+      URL: "https://www.microsoft.com/"
+      logo_src: "/images/microsoft-logo.png"
+    - Name: "Microsoft"
+      Weight: 3
+      URL: "https://www.microsoft.com/"
+      logo_src: "/images/microsoft-logo.png"
+    - Name: "Microsoft"
+      Weight: 4
+      URL: "https://www.microsoft.com/"
+      logo_src: "/images/microsoft-logo.png"
   navigation:
     social:
       - Name: "Reddit"

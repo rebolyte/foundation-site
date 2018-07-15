@@ -5,22 +5,32 @@
         {{- if eq .template "action-feature" -}}{{ partial "blocks/action-feature" (dict "Params" .) }}{{- end -}}
     {{- end -}}
     
-    <section class="py-4">
-        <div class="container mx-auto flex flex-col items-center">
-            <div class="grid grid-columns-1 grid-gap-xs sm:grid-columns-2 sm:grid-gap-sm grid-justify-center">
-                <div class="card min-w-sm bg-golden-gradient">
+    <section class="pb-4 mx-4">
+        <div class="container mx-auto">
+            <div class="grid grid-columns-1 grid-gap-xs md:grid-columns-2 md:grid-gap-sm md:w-3/4 grid-justify-center mx-auto">
+                <div class="card bg-golden-gradient">
                     <h2 class="text-grey-darker">{{ i18n "latest_blogs" }}</h2>
                     {{ range first 4 (where .Data.Pages.ByDate.Reverse "Section" "blog") }}
                         {{ .Render "li" }}
                     {{ end }}
                 </div>
             
-                <div class="card min-w-sm bg-blue-gradient">
+                <div class="card bg-blue-gradient">
                     <h2 class="text-grey-darker">{{ i18n "latest_events" }}</h2>        
                     {{ range first 4 (where .Data.Pages.ByDate.Reverse "Section" "events") }}
                         {{ .Render "li" }}
                     {{ end }}
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pb-4">
+        <div class="container mx-auto flex flex-col items-center">
+            <div class="grid grid-columns-1 grid-gap-xs sm:grid-columns-2 md:grid-columns-4 sm:grid-gap-sm grid-justify-center">
+                {{ range .Site.Params.sponsors -}}
+                    <a class="text-white no-underline mr-4" href="{{ .URL }}" title="{{ .Name }}"><img src="{{ .logo_src }}"></a>
+                {{ end }}
             </div>
         </div>
     </section>
