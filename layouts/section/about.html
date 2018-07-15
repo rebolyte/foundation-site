@@ -9,7 +9,13 @@
         </section>
     {{ end }}
 
-    {{ partial "blockloader" . }}
+    <section class="container mx-auto mt-12 px-2 md:px-8 pb-8 flex flex-col items-center">
+        {{ range .Params.team }}
+            {{ partial "side-card" (dict "thumbnail" .profile_img "title" .name "description" .description) }}        
+        {{ end }}
+        
+        {{ partial "blockloader" . }}
+    </section>
 
 </div>
 
