@@ -1,7 +1,19 @@
 {{ define "main" }}
 
+    <div class="absolute pin-t overflow-hidden mobile:hidden index-triangle-top">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" class="w-full h-full">
+            <polygon fill="#dbdde0" points="0,0 0,100 100,0"/>
+        </svg>
+    </div>
+    
+    <div class="absolute pin-b overflow-hidden mobile:hidden index-triangle-bottom">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" class="w-full h-full">
+            <polygon fill="#e4e4e4" points="0,0 0,100 100,100"/>
+        </svg>
+    </div>
+
     <!-- Use page-specific blockloader, since we need to divide up some sections -->
-    <div class="bg-theme-gradient w-full">
+    <div class="mobile:bg-theme-gradient">
         {{- range .Params.blocks -}}
             {{- if eq .template "action-feature" -}}{{ partial "blocks/action-feature" (dict "Params" .) }}{{- end -}}
         {{- end -}}
