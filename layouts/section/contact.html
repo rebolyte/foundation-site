@@ -68,6 +68,23 @@
         </div>
     </div>
 
+    <section class="mt-12 py-12 md:py-24 bg-theme-gradient w-full">
+        <div class="container mx-auto relative">
+    
+            <div class="mx-auto px-2 md:px-8 md:flex items-center text-center max-w-sm">
+                {{ range .Site.Params.navigation.social -}}
+                <a class="text-rl-gray text-5xl no-underline mr-4" href="{{ .URL }}" title="{{ .Name }}">{{ partial "icon" (dict "icon" .Identifier) }}</a>
+                {{ end }}
+            </div>
+            <div class="matrix-lg matrix-gray" style="left: -6rem; top: 25%;"></div>
+            <div class="matrix-lg matrix-gray" style="right: 0; bottom: -1rem;"></div>
+            <div class="matrix-sm matrix-gold" style="left: 7rem; top: 30%;"></div>
+            <div class="matrix-sm matrix-gold" style="right: 30%; top: -1rem;"></div>
+            <div class="matrix-sm matrix-gray" style="right: 12%; top: 0;"></div>
+        </div>
+    </section>
+    
+
 </div>
 
 {{ end }}

@@ -21,7 +21,7 @@
 		{{ end }}
 		<div class="max-w-md mx-auto mt-12 md:mt-24">
 			<h1 class="avenir-black text-grey-darker text-4xl">{{ .Title }}</h1>
-			<div class="text-rl-gray mb-2 opacity-50">{{ .Date.Format "2 January, 2006" }} | By {{ .Params.author }}</div>
+			<div class="text-rl-gray mb-2 opacity-50">{{ .Date.Format "2 January, 2006" }} {{ with .Params.location }} | {{ . }} {{ end }}</div>
 			{{ range .Params.tags }}
 				<a class="tag no-underline" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">#{{ . }}</a>
 			{{ end }}

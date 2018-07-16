@@ -2,7 +2,7 @@
 date: 2017-05-03T20:01:17-05:00
 title: Title goes here
 author: Gregg Irwin
-category: update
+category: meeting
 tags:
   - blockchain
   - windows

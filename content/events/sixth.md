@@ -2,7 +2,7 @@
 date: 2017-05-02T20:01:17-05:00
 title: Title goes here
 author: Gregg Irwin
-category: update
+category: meeting
 tags:
   - blockchain
 hero_type: image

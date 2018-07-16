@@ -16,6 +16,8 @@ cta_narrow_heading:
   other: We’re on a Mission to Fight Software Complexity
 cta_narrow_text:
   other: Join the Red Foundation
+join:
+  other: Join
 postedTo:
   other: 'This article has also been posted to:'
 twitterShare:

@@ -1,14 +1,12 @@
 ---
 date: 2018-05-28T13:52:27-05:00
-title: Markdown test
-author: Nenad Rakocevic
-category: update
+title: Event Markdown test
+location: Paris, France
+category: meeting
 tags:
-  - gui
-  - macos
-  - blockchain
+  - paris-agreement
 hero_type: image
-hero_src: https://images.pexels.com/photos/993019/pexels-photo-993019.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
+hero_src: https://images.pexels.com/photos/699466/pexels-photo-699466.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
 ---
 
 # h1 Heading
