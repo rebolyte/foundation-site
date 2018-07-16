@@ -3,8 +3,6 @@
 <div>
     {{ partial "page-title" (dict "title" .Title "subtitle" .Params.subtitle "page" .Params)}}
 
-    <div class="matrix"></div>
-
     <section class="px-2 py-4">
         <div class="container mx-auto flex flex-col items-center max-w-lg">
             <div class="inline-block mb-4">
@@ -29,6 +27,7 @@
         {{- if eq .template "2up" -}}{{ partial "blocks/2up" (dict "Params" .) }}{{- end -}}
         {{- if eq .template "1up-media" -}}{{ partial "blocks/1up-media" (dict "Params" .) }}{{- end -}}
         {{- if eq .template "card-grid" -}}{{ partial "blocks/card-grid" (dict "Params" .) }}{{- end -}}
+        {{- if eq .template "grid-list" -}}{{ partial "blocks/grid-list" (dict "Params" .) }}{{- end -}}
         {{- if eq .template "accordion" -}}{{ partial "blocks/accordion" (dict "Params" .) }}{{- end -}}
     {{- end -}}
     

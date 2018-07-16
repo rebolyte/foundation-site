@@ -9,16 +9,6 @@ blocks:
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et lorem sed quam porta rhoncus. Pellentesque porttitor nisi sit amet tortor tristique, nec euismod odio laoreet. Vivamus non elementum sem, non sodales dolor. 
     image: "http://via.placeholder.com/500x280"
     image_position: "right"
-  - template: "grid-list"
-    num_cols: 6
-    grid_items:
-      - icon: test
-        description: Member Name
-      - icon: test
-        description: Member Name
-      - icon: test
-        description: Member Name
-      - icon: test
   - template: "action-feature"
     heading: "Partner with Red"
     content: Partner with the world’s most innovative community and help us fight software complexity today.

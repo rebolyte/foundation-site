@@ -63,10 +63,31 @@
 }
 
 .matrix {
-	width: 200px;
-	height: 40px;
+	position: absolute;
 	transform: rotate(-28deg);
-	border-radius: 25px;
+	opacity: 0.08;
+
+	@apply .rounded-xl;
+}
+
+.matrix-gray {
 	background-image: linear-gradient(to left, #000, #c7c8cf);
-	opacity: 0.5;
+}
+
+.matrix-gold {
+	@apply .bg-golden-gradient;
+}
+
+.matrix-lg {
+	@apply .matrix;
+
+	width: 12.5rem;
+	height: 2.5rem;
+}
+
+.matrix-sm {
+	@apply .matrix;
+
+	width: 5rem;
+	height: 1rem;
 }
