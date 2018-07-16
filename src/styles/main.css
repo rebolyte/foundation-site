@@ -61,3 +61,12 @@
 	border-top: 6px solid transparent;
 	border-bottom: 6px solid transparent;
 }
+
+.matrix {
+	width: 200px;
+	height: 40px;
+	transform: rotate(-28deg);
+	border-radius: 25px;
+	background-image: linear-gradient(to left, #000, #c7c8cf);
+	opacity: 0.5;
+}
