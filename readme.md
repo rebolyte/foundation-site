@@ -36,3 +36,13 @@ To push changes made in theme submodule (while within themes/featherweight direc
 $ git commit -a -m "updates"
 $ git push origin HEAD:<branch-name-in-theme-repo>
 ```
+
+## Useful things
+
+[Embed Responsively](http://embedresponsively.com/) will give you YouTube/Vimeo embed codes that work responsively (see 1up-media.html template partial for example).
+
+Photos are not automatically resized when added through Netlify CMS, so resize/crush them before uploading.
+
+Getting familiar with [Go templates](https://golang.org/pkg/text/template/) is very handy for working with Hugo. Here's a [good tutorial](https://code.tutsplus.com/tutorials/text-generation-with-go-templates--cms-30441).
+
+Pretty printing Hugo variables for debug: https://gist.github.com/kaushalmodi/afb6c3e5098eccc028bddc91cf1eb53a
