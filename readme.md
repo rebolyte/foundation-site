@@ -1,4 +1,4 @@
-# Fullstack Technologies website
+# Red Foundation website
 
 This is the site source.
 
@@ -46,3 +46,5 @@ Photos are not automatically resized when added through Netlify CMS, so resize/c
 Getting familiar with [Go templates](https://golang.org/pkg/text/template/) is very handy for working with Hugo. Here's a [good tutorial](https://code.tutsplus.com/tutorials/text-generation-with-go-templates--cms-30441).
 
 Pretty printing Hugo variables for debug: https://gist.github.com/kaushalmodi/afb6c3e5098eccc028bddc91cf1eb53a
+
+Find the right syntax for your YAML multiline strings - https://yaml-multiline.info/
