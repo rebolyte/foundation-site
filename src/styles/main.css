@@ -28,6 +28,14 @@
 	}
 }
 
+.theme-mobile-menu {
+	@apply .text-rl-deep-blue .border-rl-deep-blue;
+}
+
+.theme-mobile-menu:hover {
+	@apply .text-rl-med-blue .border-rl-med-blue;
+}
+
 /**
  * Other site-specific styles
  */
