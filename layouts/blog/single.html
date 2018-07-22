@@ -33,7 +33,7 @@
 </section>
 
 <div class="bg-theme-gradient border-top-theme w-full">
-	{{ $p := (dict "heading" (i18n "cta_heading") "content" (i18n "cta_desc") "button_text" (i18n "join") "button_url" (relLangURL "join/"))}}
+	{{ $p := (dict "heading" (i18n "cta_heading") "content" (i18n "cta_desc") "button_text" (i18n "join") "button_url" (relLangURL "join/") "bg_dark" false)}}
 	{{ $p2 := (dict "description" (i18n "cta_narrow_heading") "link_text" (i18n "cta_narrow_text") "link_url" (relLangURL "join/")) }}
 	<div class="min-h-xs flex flex-col justify-center">
 		{{ partial "blocks/action-feature" (dict "Params" $p) }}

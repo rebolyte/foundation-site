@@ -11,7 +11,9 @@
 				<h3 class="mb-6 font-semibold text-3xl text-white">{{ markdownify . }}</h3>
 				{{- end -}}
 				{{- with .Params.content -}}
-				<p class="mb-4 text-rl-gray">{{ markdownify . }}</p>
+				<div class="mb-4 {{ cond $.Params.bg_dark "text-rl-gray" "text-grey-darker" }} content">
+					{{ markdownify . }}
+				</div>
 				{{- end -}}
 				<a class="btn btn-red" href="{{ .Params.button_url }}">{{ .Params.button_text }}</a>
 			</div>

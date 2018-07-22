@@ -14,6 +14,7 @@ blocks:
     content: Partner with the world’s most innovative community and help us fight software complexity today.
     button_text: "Join Red"
     button_url: "/join/"
+    bg_dark: false
   - template: "narrow-cta"
     description: "We’re on a Mission to Fight Software Complexity"
     link_url: "/join/"

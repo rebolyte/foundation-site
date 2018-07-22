@@ -71,7 +71,7 @@
                 {{- if eq .template "narrow-cta" -}}{{ partial "blocks/narrow-cta" (dict "Params" .) }}{{- end -}}
             {{- end -}}
         {{ else }}
-            {{ $p3 := (dict "heading" (i18n "cta_heading") "content" (i18n "cta_desc") "button_text" (i18n "contact") "button_url" (relLangURL "contact/"))}}
+            {{ $p3 := (dict "heading" (i18n "cta_heading") "content" (i18n "cta_desc") "button_text" (i18n "contact") "button_url" (relLangURL "contact/") "bg_dark" false)}}
             {{ $p4 := (dict "description" (i18n "cta_narrow_heading") "link_text" (i18n "cta_narrow_text") "link_url" (relLangURL "contact/")) }}
             {{ partial "blocks/action-feature" (dict "Params" $p3) }}
             {{ partial "blocks/narrow-cta" (dict "Params" $p4) }}

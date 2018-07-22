@@ -7,6 +7,7 @@ blocks:
       Red is the world’s first full-stack programming language, and the Red Foundation is helping great companies use it.
     button_text: "Learn More"
     button_url: "/about/"
+    bg_dark: false
   - template: "media-feature"
     heading: "Digging In"
     content: |-
