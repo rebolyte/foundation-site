@@ -1,5 +1,5 @@
 // TODO: Update to use module aliases!
-import Vue from '../../themes/featherweight/node_modules/vue';
+// import Vue from '../../themes/featherweight/node_modules/vue';
 
 // Vue.component('accordion-toggle', {
 // 	// &#x25B2; // up
