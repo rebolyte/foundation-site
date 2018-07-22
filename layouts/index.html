@@ -1,12 +1,12 @@
 {{ define "main" }}
-
-    <div class="absolute pin-t overflow-hidden mobile:hidden index-triangle-top">
+<div class="relative overflow-hidden">
+    <div class="absolute pin-t mobile:hidden index-triangle-top">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" class="w-full h-full">
             <polygon fill="#dbdde0" points="0,0 0,100 100,0"/>
         </svg>
     </div>
     
-    <div class="absolute pin-b overflow-hidden mobile:hidden index-triangle-bottom">
+    <div class="absolute pin-b mobile:hidden index-triangle-bottom">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" class="w-full h-full">
             <polygon fill="#e4e4e4" points="0,0 0,100 100,100"/>
         </svg>
@@ -68,5 +68,5 @@
             {{- if eq .template "narrow-cta" -}}{{ partial "blocks/narrow-cta" (dict "Params" .) }}{{- end -}}
         {{- end -}}
     </div>
-
+</div>
 {{ end }}
