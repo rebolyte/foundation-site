@@ -1,5 +1,5 @@
 ---
-title: Red Foundation
+title: The Red Foundation
 blocks:
   - template: "action-feature"
     heading: "Supporting the Red Language and Its Community"

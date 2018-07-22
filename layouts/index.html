@@ -1,12 +1,12 @@
 {{ define "main" }}
 <div class="relative overflow-hidden">
-    <div class="absolute pin-t mobile:hidden index-triangle-top">
+    <div class="absolute pin-t overflow-hidden mobile:hidden index-triangle-top">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" class="w-full h-full">
             <polygon fill="#dbdde0" points="0,0 0,100 100,0"/>
         </svg>
     </div>
     
-    <div class="absolute pin-b mobile:hidden index-triangle-bottom">
+    <div class="absolute pin-b overflow-hidden mobile:hidden index-triangle-bottom">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" class="w-full h-full">
             <polygon fill="#e4e4e4" points="0,0 0,100 100,100"/>
         </svg>
@@ -30,7 +30,7 @@
                 </div>
             
                 <div class="card bg-blue-gradient">
-                    <h2 class="text-grey-darker">{{ i18n "latest_events" }}</h2>        
+                    <h2 class="text-rl-gray">{{ i18n "latest_events" }}</h2>        
                     {{ range first 4 (where .Data.Pages.ByDate.Reverse "Section" "events") }}
                         {{ .Render "li" }}
                     {{ end }}
