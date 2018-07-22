@@ -1,5 +1,6 @@
 ---
 baseURL: "https://foundation.red-lang.org/"
+title: The Red Foundation
 languageCode: "en-us"
 metaDataFormat: yaml
 theme: "featherweight"
